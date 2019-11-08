@@ -1,25 +1,25 @@
 package ru.auto.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import static ru.auto.settings.Wait.waitVisibilityOfElementByCss;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WelcomePage {
-    WebDriver driver;
-
-   /* public WelcomePage(WebDriver driver) {
+    private WebDriver driver;
+    public WelcomePage(WebDriver driver) {
         this.driver = driver;
-    }*/
+
+    }
 
     @FindBy(css = "#confirm-button")
-    WebElement acceptButton;
+    private WebElement acceptButton;
 
-    public WelcomePage confirmEntry() throws InterruptedException {
-        Thread.sleep(1000);
-        waitVisibilityOfElementByCss(String.valueOf(acceptButton));
+    public MainPage confirmEntry() {
+
         acceptButton.click();
-        return this;
+    return new MainPage(driver);
     }
 }

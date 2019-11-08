@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class ChromeSettings {
 
     protected WebDriver driver;
+
     @BeforeEach
     void setUp() {
 
@@ -18,11 +19,11 @@ public class ChromeSettings {
         driver = new ChromeDriver();
         driver.get("https://auto.ru/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     @AfterEach
     void close() {
-        driver.close();
+        driver.quit();
     }
 }

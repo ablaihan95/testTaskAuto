@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fffa0f1-9f58-4203-9ddb-0c39a450cc1e" name="Default Changelist" comment="" />
+    <list default="true" id="6fffa0f1-9f58-4203-9ddb-0c39a450cc1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/auto/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/pages/MarkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/auto/pages/MarkPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/pages/RegionsBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/auto/pages/RegionsBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/pages/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/auto/pages/WelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/settings/ChromeSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/auto/settings/ChromeSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/settings/Wait.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/auto/testRunner/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/auto/testRunner/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/RebootDemo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/MarkPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/MarkPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/RegionsBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/RegionsBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/WelcomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/auto/pages/WelcomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/settings/ChromeSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/auto/settings/ChromeSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/settings/Wait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/auto/testRunner/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/auto/testRunner/Tests.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,10 +47,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1THGdkeIsfCQfUk2Q4wae6UjYM3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RebootDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RebootDemo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,9 +73,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests">
+  <component name="RunManager" selected="JUnit.Tests.runTestCase">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RebootDemo" />
+      <module name="autoTestTask" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.auto.testRunner.*" />
@@ -64,8 +89,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests.runTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autoTestTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.auto.testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.auto.testRunner" />
+      <option name="MAIN_CLASS_NAME" value="ru.auto.testRunner.Tests" />
+      <option name="METHOD_NAME" value="runTestCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests.someTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RebootDemo" />
+      <module name="autoTestTask" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.auto.testRunner.*" />
@@ -81,7 +122,7 @@
       </method>
     </configuration>
     <configuration name="someTest.getMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RebootDemo" />
+      <module name="autoTestTask" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.auto.testRunner.*" />
@@ -97,7 +138,7 @@
       </method>
     </configuration>
     <configuration name="testChallenge.E2ETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RebootDemo" />
+      <module name="autoTestTask" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kz.kazdream.reboot.demo.tests.testRunner.*" />
@@ -114,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.runTestCase" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.someTest.getMethod" />
         <item itemvalue="JUnit.Tests.someTest" />
@@ -134,11 +176,23 @@
       <workItem from="1573109700936" duration="7690000" />
       <workItem from="1573133464397" duration="25000" />
       <workItem from="1573133577108" duration="7794000" />
+      <workItem from="1573186998867" duration="6913000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -147,11 +201,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/ru/auto/testRunner/someTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/auto/pages/WelcomePage.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/test/java/ru/auto/testRunner/someTest.java</url>

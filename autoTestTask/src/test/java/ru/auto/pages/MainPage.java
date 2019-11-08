@@ -4,16 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import ru.auto.settings.Wait;
-
-import static ru.auto.settings.Wait.*;
 
 public class MainPage {
      private WebDriver driver;
-
+        private WebDriverWait wait;
     public MainPage(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, 4);
     }
     /*private WebDriverWait wait = new WebDriverWait(driver, 10);*/
     @FindBy(css = ".GeoSelect__title-shrinker")
@@ -22,14 +22,14 @@ public class MainPage {
     WebElement allMarks;
 
 
-    public MainPage waitMainPage() {
-        waitVisibilityOfElementByCss(".Index__title-h1");
-        return this;
+    public WelcomePage waitMainPage() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".Index__title-h1")));
+        return new WelcomePage(driver);
     }
 
     public MainPage openRegionsBox() {
         regionSpan.click();
-        waitVisibilityOfElementByXpath("//div[@class= 'RichInput GeoSelectPopup']");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class= 'RichInput GeoSelectPopup']")));
         return this;
     }
 
@@ -38,9 +38,11 @@ public class MainPage {
         return this;
     }
 
-    public void pickMark(String mark) {
+    public MarkPage pickMark(String mark) {
         driver.findElement(By.xpath("//div[contains(text(), '"+mark+"')]")).click();
-        waitURL("https://auto.ru/cars/fiat/all/");
+        //TODO bug не подгружает визуально на странице
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ListingHead__title")));
+        return new MarkPage(driver);
     }
 
 
